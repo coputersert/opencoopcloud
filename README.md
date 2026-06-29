@@ -19,3 +19,19 @@ Basato su Substrate, libp2p, IPFS/BitTorrent e crittografia AES‑256‑GCM.
 - ✅ **Accesso da smartphone** – scannerizza un QR code per accedere alla tua dashboard dal telefono.
 
 ## Architettura
+
+## Requisiti
+
+- **Sistema operativo:** Linux (testato su Ubuntu 22.04), macOS, Windows (con WSL2 o PowerShell)
+- **Dipendenze base:** Git, curl, Python 3.8+, pip, Node.js 16+, npm, Rust (ultima stabile)
+- **Spazio disco:** almeno 10 GB liberi per compilazione e test
+
+## Installazione rapida (automatica)
+
+### Su Linux o macOS
+
+```bash
+git clone https://github.com/tuo-utente/opencoopcloud.git
+cd opencoopcloud
+chmod +x install.sh
+./install.sh
