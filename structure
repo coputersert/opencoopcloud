@@ -1,0 +1,31 @@
+opencoopcloud/
+├── README.md
+├── LICENSE
+├── .gitignore
+├── opencoopcloud_setup.sh          # Setup automatico completo (blockchain + nodi + client)
+├── start_all.sh                     # Avvia blockchain, nodi e test
+├── install.sh                       # Installer universale Linux/macOS
+├── install.ps1                      # Installer Windows
+├── launcher.js                      # Launcher multi‑versione
+├── package.json                     # Per il launcher e dipendenze Node comuni
+├── blockchain/
+│   └── substrate-node-template/     # (clonato dallo script, ma vuoi tenerne una copia? Meglio escluderlo e clonarlo nello script)
+├── pallets/
+│   └── storage-credits/
+│       ├── Cargo.toml
+│       └── src/
+│           └── lib.rs
+├── nodes/
+│   └── node.py                      # Nodo storage (HTTP server + heartbeat)
+├── client/
+│   ├── client_upload.py
+│   ├── client_download.py
+│   └── fragments.txt                # generato dopo upload
+├── frontend/
+│   ├── server/
+│   │   ├── server.js                # API e serving dashboard
+│   │   └── package.json
+│   └── public/
+│       └── index.html               # Dashboard React
+└── data/                            # Dati utente (creata automaticamente, non committare)
+    └── config.json
